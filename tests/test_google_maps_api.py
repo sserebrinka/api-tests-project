@@ -2,6 +2,7 @@ from utils.api import GoogleMapsApi
 from utils.checking import Checking
 import requests
 import json
+from utils.logger import Logger
 
 """Создание, изменение и удаление новой локации"""
 class TestCreatePlace():
@@ -46,7 +47,7 @@ class TestCreatePlace():
         Checking.check_status_code(result_get, 404)
         token_get = self.get_list_token(result_get)
         Checking.check_json_token(result_get, token_get)
-        Checking.check_json_value(result_get, 'msg', 'Get operation failed, looks like place_id doesn\'t exists')
+        Checking.check_json_value(result_get, 'msg', "Get operation failed, looks like place_id  doesn't exists")
 
         print("\nТестирование прошло успешно!")
     
