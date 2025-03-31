@@ -1,0 +1,40 @@
+
+Метод POST
+Запрос отправлен на url: https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Результат POST запроса: {"status":"OK","place_id":"13a81f04b7b296e4c7d3dacd01ad49b5","scope":"APP","reference":"e9c7dc5b532338fabe0b16d168a256e7e9c7dc5b532338fabe0b16d168a256e7","id":"e9c7dc5b532338fabe0b16d168a256e7"}
+Успешно! Статус-код: 200
+Все обязательные поля присутствуют
+Значение поля status верно!
+
+Метод GET POST
+Запрос отправлен на url: https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=13a81f04b7b296e4c7d3dacd01ad49b5
+Результат GET запроса: {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"29, side layout, cohen 09","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Успешно! Статус-код: 200
+Все обязательные поля присутствуют
+
+Метод PUT
+Результат PUT запроса: {"msg":"Address successfully updated"}
+Успешно! Статус-код: 200
+Все обязательные поля присутствуют
+Значение поля msg верно!
+
+Метод GET PUT
+Запрос отправлен на url: https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=13a81f04b7b296e4c7d3dacd01ad49b5
+Результат GET запроса: {"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"101 Cheboksary, RU","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Успешно! Статус-код: 200
+Все обязательные поля присутствуют
+
+Метод DELETE
+Результат DELETE запроса: {"status":"OK"}
+Успешно! Статус-код: 200
+Все обязательные поля присутствуют
+Значение поля status верно!
+
+Метод GET DELETE
+Запрос отправлен на url: https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=13a81f04b7b296e4c7d3dacd01ad49b5
+Результат GET запроса: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+Успешно! Статус-код: 404
+Все обязательные поля присутствуют
+Значение поля msg верно!
+
+Тестирование прошло успешно!
